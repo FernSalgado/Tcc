@@ -17,4 +17,15 @@
 	  height:500px;
   }
   
+.Cor1 { background-color: #BF4158; }
+.Cor2 { background-color: #F2CDAC; }
+.Cor3 { background-color: #D9886A; }
+.Cor4 { background-color: #F25D50; }
+.Cor5 { background-color: #A64E4E; }
+
+.Cor1-texto { color: #BF4158; }
+.Cor2-texto { color: #F2CDAC; }
+.Cor3-texto { color: #D9886A; }
+.Cor4-texto { color: #F25D50; }
+.Cor5-texto { color: #A64E4E; }
   
