@@ -9,4 +9,7 @@
 		    $(document).ready(function(){
 			$('.sidenav-cadastro').sidenav({edge: 'right'});
 			$('.sidenav-login').sidenav({edge: 'right'});
+			$(".dropdown-trigger").dropdown();
 		  });
+			
+        
