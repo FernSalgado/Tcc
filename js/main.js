@@ -7,6 +7,7 @@
 			var instances = M.FloatingActionButton.init(elems);
 		  });
 		    $(document).ready(function(){
+			$('.sidenav').sidenav();
 			$('.sidenav-cadastro').sidenav({edge: 'right'});
 			$('.sidenav-login').sidenav({edge: 'right'});
 			$(".dropdown-trigger").dropdown();

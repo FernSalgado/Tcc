@@ -1,26 +1,36 @@
 <!DOCTYPE html>
   <html>
     <head>
-      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-      <link type="text/css" rel="stylesheet" href="css/materialize.css"  media="screen,projection"/>
-	  <link type="text/css" rel="stylesheet" href="css/main.css"  media="screen,projection"/>
-	  <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    </head>
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		<link type="text/css" rel="stylesheet" href="css/materialize.css"  media="screen,projection"/>
+		<link type="text/css" rel="stylesheet" href="css/main.css"  media="screen,projection"/>
+		<link href="https://fonts.googleapis.com/css?family=Russo+One" rel="stylesheet">
+		<link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
+		<link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		<title>Index</title>
+	</head>
 
-    <body>
+    <body class="RussoOne">
 		<div>
 			<!-- Menu -->
 			<header>
-			<nav class="Cor5 Cor1-texto">
-				<div class="nav-wrapper">
-				  <a href="#" class="brand-logo">Logo</a>
-				  <ul id="nav-mobile" class="right hide-on-med-and-down">
-					<li data-target="sidebar-login" class="sidenav-trigger"><a>Login</a></li>
-					<li data-target="slide-out" class="sidenav-trigger"><a >Cadastro</a></li>
-				  </ul>
-				</div>
-			</nav>
+				<nav class="Cor5 Cor1-texto">
+					<div class="nav-wrapper">
+					<a href="index.html" class="fontsize">Aprendendo <b class="text-red">Ruby</b></a>
+					<a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+						<ul id="nav-mobile" class="right hide-on-med-and-down">
+							<li data-target="sidebar-login" class="sidenav-trigger"><a>Login</a></li>
+							<li data-target="slide-out" class="sidenav-trigger"><a >Cadastro</a></li>
+						</ul>
+						<ul class="sidenav" id="mobile-demo">
+							<li data-target="sidebar-login" class="sidenav-trigger"><a>Login</a></li>
+							<li data-target="slide-out" class="sidenav-trigger"><a >Cadastro</a></li>
+						</ul>
+					</div>
+
+				</nav>
 			</header>
 			<!-- Sessões -->
 			<main>
@@ -28,7 +38,7 @@
 		<ul id="sidebar-login" class="sidenav sidenav-login Cor2">
 			<div class="alinhaForm">
 				<p> Seja bem vindo! Insira suas informações abaixo.</p>
-				<p>Se ainda não tiver cadastro, <a href="#" data-target="slide-out" class="sidenav-close sidenav-trigger">faça o aqui.</a></p>
+				<p>Se ainda não tiver cadastro, <a href="#" data-target="slide-out" class="sidenav-close sidenav-trigger Cor5-texto txthover">faça o aqui.</a></p>
 				<form class="col s12">
 					<div class="row">
 						<div class="input-field col s12">
@@ -49,7 +59,7 @@
 		  <ul id="slide-out" class="sidenav sidenav-cadastro Cor2">
 			  <div class="alinhaForm">
 				<p>Registre-se a baixo e faça parte do nosso time!</p>
-				<p>Ou se já tiver cadastro, <a href="#" data-target="sidebar-login" class="sidenav-close sidenav-trigger">acesse aqui sua conta.</a></p>
+				<p>Ou se já tiver cadastro, <a href="#" data-target="sidebar-login" class="sidenav-close sidenav-trigger Cor5-texto txthover">acesse aqui sua conta.</a></p>
 				<div class="row">
 				<form class="col s12">
 				  <div class="row">
@@ -88,10 +98,10 @@
 			  </div>
 			</div>
 			<div class="section Cor1 Cor2-texto">
-			  <div class="container">
-				<h2 class="header">Aprendendo Ruby</h2>
-				<p class="grey-text text-darken-3 lighten-3">Parallax is an effect where the background content or image in this case, is moved at a different speed than the foreground content while scrolling.</p>
-			  </div>
+				<div class="container">
+					<h2 class="RussoOne card-panel Cor5 z-depth-3 centerTxt">Divirta-se <b class="text-red">aprendendo</b></h2>
+					<p class="text-black card-panel Cor5 z-depth-3">Devido à grande dificuldade que muitos encontram ao estudar algoritmos e lógica de programação. Em grande parte, o conteúdo de ensino acaba sendo maçante e assustador para um público que nunca teve contato com este assunto antes, principalmente pessoas mais novas. E se de alguma forma isso fosse mais fácil ou intuitivo? Ou até mesmo, divertido? </p>
+				</div>
 			</div>
 			
 			<div class="parallax-container">
@@ -99,7 +109,7 @@
 			</div>
 			<div class="section Cor4">
 			  <div class="container">
-				<h2 class="header  Cor2-texto">Nossos principais jogos</h2>
+				<h2 class="card-panel Cor5 z-depth-3  Cor2-texto centerTxt">Nossos principais jogos</h2>
 					  <div class="row" style="text-align:center">
 						<div class="col s6 m4 l3">
 						  <div class="card">
@@ -152,9 +162,10 @@
 			</div>
 			
 						<div class="section Cor3">
-			  <div class="container Cor2-texto">
-				<h2 class="header">Aprendendo Ruby</h2>
-				<p class="grey-text text-darken-3 lighten-3">Parallax is an effect where the background content or image in this case, is moved at a different speed than the foreground content while scrolling.</p>
+			  <div class="container Cor5-texto">
+				<h2 class="card-panel Cor2 centerTxt">Sobre nós</h2>
+				<p class="card-panel Cor2">Nosso principal foco não é substituir as escolas e os professores. Muito pelo contrário!<br>Nosso objetivo é potencializar o ensino, servindo como um reforço que geralmente é muito necessário.
+				Seja você um adolescente que quer aprender mais, um pai que quer ensinar algo divertido a seus filhos ou até mesmo um professor que quer reforçar o ensino a seus alunos, juntem-se a nós!</p>
 			  </div>
 			</div>
 			<div class="parallax-container">
@@ -163,10 +174,11 @@
 			</div>
 			</main>
 		<footer class="page-footer Cor2 grey-text">
-          <div class="container">
+		<p class="container centerTxt"> &copy; 2019 - FATEC RUBENS LARA - Aprendendo Ruby</p>
+<!--           <div class="container">
             <div class="row">
               <div class="col l6 s12">
-                <h5 class="">Footer Content</h5>
+                <h5 class="">Aprendendo Ruby</h5>
                 <p class="">You can use rows and columns here to organize your footer content.</p>
               </div>
               <div class="col l4 offset-l2 s12">
@@ -178,14 +190,13 @@
                   <li><a  href="#!">Link 4</a></li>
                 </ul>
               </div>
-            </div>
-          </div>
-          <div class="footer-copyright grey-text">
+			</div>
+			</div> -->
+<!--           <div class="footer-copyright grey-text">
             <div class="container">
-            © 2014 Copyright Text
-            <a class="" href="#!">More Links</a>
+            Aprendendo Ruby
             </div>
-          </div>
+          </div> -->
         </footer>
 		</div>
 
