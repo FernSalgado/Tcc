@@ -11,9 +11,12 @@
   .alinhaForm{
 	padding:30px;
   }
-  
-body:not(.game) {
-    font-family: 'Russo One', sans-serif; !important
+
+.texto{
+  font-family:'Roboto Slab', serif;
+  }
+.titulo {
+    font-family: 'Russo One', sans-serif;
 }
 
 .game{
@@ -45,4 +48,26 @@ body:not(.game) {
 .Cor3-texto { color: #D9886A; }
 .Cor4-texto { color: #F25D50; }
 .Cor5-texto { color: #A64E4E; }
-  
+
+.rating {
+  unicode-bidi: bidi-override;
+  direction: rtl;
+  text-align: center;
+  font-size: 2em;
+}
+.rating > span {
+  display: inline-block;
+  position: relative;
+  width: 1em;
+}
+.rating > span:hover,
+.rating > span:hover ~ span {
+  color: transparent;
+}
+.rating > span:hover:before,
+.rating > span:hover ~ span:before {
+   content: "\2605";
+   position: absolute;
+   left: 0; 
+   color: #F25D50;
+}

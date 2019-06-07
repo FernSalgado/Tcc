@@ -3,10 +3,13 @@
     <head>
 		<meta charset="UTF-8"/>
 		  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-		  <link href="https://fonts.googleapis.com/css?family=Russo+One" rel="stylesheet">
+			<link href="https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap" rel="stylesheet">
 		  <link type="text/css" rel="stylesheet" href="css/materialize.css"  media="screen,projection"/>
 		  <link type="text/css" rel="stylesheet" href="css/blockrain.css">
-		  <link type="text/css" rel="stylesheet" href="css/main.css">
+			<link type="text/css" rel="stylesheet" href="css/main.css">
+			<link rel="stylesheet" type="text/css" href="/node_modules/primeicons/primeicons.css" />
+			<link rel="stylesheet" type="text/css" href="/node_modules/primeng/resources/themes/nova-light/theme.css" />
+			<link rel="stylesheet" type="text/css" href="/node_modules/primeng/resources/primeng.min.css" />
 		  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     </head>
     <body>
@@ -39,23 +42,18 @@
 			<div class="container Cor4 Cor1-texto">
 				<div class="row">
 					<div class="col l12 s12 m12">
-						<div class="card-panel Cor2" style="text-align:center;">
+						<div class="card-panel Cor2 titulo" style="text-align:center;">
 						<h3>BlockRain</h3>
+						<p>O objetivo do jogo é mover as peças, montando linhas apartir da base. Sempre que uma linha for completa em todos os espaços, ela sumirá e você ganhará pontos. Simples assim!</p>
 									
 						</div>
 					</div>
 				</div>
 				<div class="row">
-					<div class="col l4 s12 m6">
-						<div class="card-panel Cor2" style="text-align:center;">
-									<p>O objetivo do jogo é mover as peças, montando linhas apartir da base. Sempre que uma linha for completa em todos os espaços, ela sumirá e você ganhará pontos. Simples assim!</p>
-									
-						</div>
-					</div>
 					<div class="col l3 s12 m12">
 						<div class="card-panel Cor2 game"></div>
 					</div>
-					<div class="col l5 s12 m6">
+					<div class="col l12 s12 m12">
 						<div class="card-panel Cor2" style="text-align:center;">
 							<h4>CONTROLES:</h4>
 							<p>
@@ -70,7 +68,10 @@
 				<div class="row">
 					<div class="col l12 s12 m12">
 							<div class="card-panel Cor2 " style="text-align:center;">
-							<p>Gostou do jogo? Avalie!</p>
+								<div class="rating">
+									<span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+									</div>
+							<p-rating [(ngModel)]="val3" [cancel]="false"></p-rating>
 							<div class="card-panel Cor1-texto Cor2">
 								<label class="Cor1-texto">Deixe um comentário!</label>
 								<input class="Cor1-texto" type="text"/>
