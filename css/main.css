@@ -1,73 +1,17 @@
-  body {
-    display: flex;
-    min-height: 100vh;
-    flex-direction: column;
-  }
-
-  main {
-    flex: 1 0 auto;
-  }
-  
-  .alinhaForm{
-	padding:30px;
-  }
-
-.texto{
-  font-family:'Roboto Slab', serif;
-  }
-.titulo {
-    font-family: 'Russo One', sans-serif;
-}
-
-.game{
-	  width:300px;
-	  height:500px;
-}
-  
-.fontsize{
-	font-size:2em;
-}
-
-.txthover:hover{
-	color:#26a69a;
-}
-.centerTxt{
-	text-align:center;
-}
-.btncolor{
-	background-color:#f15e75;
-}  
-.Cor1 { background-color: #BF4158; }
-.Cor2 { background-color: #F2CDAC; }
-.Cor3 { background-color: #D9886A; }
-.Cor4 { background-color: #F25D50; }
-.Cor5 { background-color: #A64E4E; }
-
-.Cor1-texto { color: #BF4158; }
-.Cor2-texto { color: #F2CDAC; }
-.Cor3-texto { color: #D9886A; }
-.Cor4-texto { color: #F25D50; }
-.Cor5-texto { color: #A64E4E; }
-
-.rating {
-  unicode-bidi: bidi-override;
-  direction: rtl;
-  text-align: center;
-  font-size: 2em;
-}
-.rating > span {
-  display: inline-block;
-  position: relative;
-  width: 1em;
-}
-.rating > span:hover,
-.rating > span:hover ~ span {
-  color: transparent;
-}
-.rating > span:hover:before,
-.rating > span:hover ~ span:before {
-   content: "\2605";
-   position: absolute;
-   left: 0; 
-   color: #F25D50;
-}
+body {display: flex;min-height: 100vh;flex-direction: column;}
+.alinhaForm{padding:30px;}
+.texto{font-family:'Roboto Slab', serif;color:white}
+.titulo {font-family: 'Russo One', sans-serif;}
+.game{width:300px;height:500px;}
+.fontsize{font-size:2em;}
+.txthover:hover{color:#26a69a;}
+.centerTxt{text-align:center;}
+.btncolor{background-color:#f15e75;}  
+.fundo{background-color:#D9665B;}
+.cards{background-color:#D9AF8B;}
+.cor-texto {color:#090d26!important;}
+.rating {unicode-bidi: bidi-override;direction: rtl;text-align: center;font-size: 2em;}
+.rating > span {display: inline-block;position: relative;width: 1em;}
+.rating > span:hover,.rating > span:hover ~ span {color: transparent;}
+.scaleCard:hover{transform: scale(1.1);transition: all 2s;}
+.rating > span:hover:before,.rating > span:hover ~ span:before {content: "\2605";position: absolute;left: 0;color:gold;}

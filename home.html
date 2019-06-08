@@ -13,10 +13,10 @@
     </head>
     <body class="RussoOne red lighten-5">
 			<header>
-				<nav class="Cor5 Cor1-texto">
-					<div class="nav-wrapper">
+				<nav class="fundo cor-texto">
+					<div class="nav-wrapper container">
 						<a href="index.html" class="fontsize titulo">Aprendendo <b class="text-red">Ruby</b></a>
-						<ul id="nav-mobile" class="right hide-on-med-and-down row">
+						<ul id="nav-mobile" class="right row cor-texto">
 						  <li class="col s6">
 							  <div class="input-field">
 									  <input id="search" type="search" required placeholder="Procure um jogo aqui...">
@@ -24,12 +24,11 @@
 									  <i class="material-icons">close</i>
 							  </div>
 						  </li>
-						  <li class="col s2"><a href="jogos.html">Jogos</a></li>
-						  <li><a class="dropdown-trigger" href="" data-target="dropdown1">Usuario<i class="material-icons right">arrow_drop_down</i></a></li>
+						  <li class="col s2"><a  class="btn"href="jogos.html">Jogos</a></li>
+						  <li><a class="dropdown-trigger btn" href="" data-target="dropdown1">Usuario<i class="material-icons right">arrow_drop_down</i></a></li>
 						</ul>
 						<ul class="dropdown-content" id="dropdown1">
-							<li><a href="">Meus Jogos</a></li>
-							<li><a href="">Meu Perfil</a></li>
+							<li><a href="home.html">Meu Perfil</a></li>
 							<li><a href="index.html">Sair</a></li>
 						</ul>
 					</div>
@@ -37,124 +36,69 @@
 			</header>
 
       <main>
-        <div class="" style="padding:20px;">
-          <div class="Cor4 z-depth-3">
+        <div class="container">
+          <div class=" ">
+				<div class="card-panel fundo row">
+						<img class="responsive-img circle col s3 m3 l3" src="img/user.png" style="max-width:150px"/>
+						<div class="col s9 m9 l9 row valign-wrapper">
+							<p class=" fundo col s3 m3 l3 texto">Nome: Usuario</p>
+							<p class=" fundo col s3 m3 l3 texto">Idade: 16</p>
+							<p class=" fundo col s3 m3 l3 texto">Interesses: Jogos</p>
+							<span class="btn col s3 m3 l3">Editar</span>
+						</div>
+				</div>
             <div class="row">
+					<div class="col s12 m6 l6">
+							<div class="card scaleCard">
+										  <div class="card-image">
+											<img src="img/blockrain.png">
+											<a href="blockrain.html" class="btn-floating halfway-fab waves-effect waves-light red pulse"><i class="material-icons">add</i></a>
+										  </div>
+										  <div class="card-content fundo texto">
+											<p>BlockRain é um jogo desenvolvido totalmente em JavaScript, baseado no clássico jogo Tetris.</p>
+										  </div>
+							</div>
+						</div>
+             <div class="col s12 m12 l6">
 				
-				<div class="col s12 m12 l4">
-				<p class="card-panel Cor5 Cor2-texto centerTxt titulo">Informações</p>
-				<div class="card-panel transparent">
-					<img class="responsive-img circle z-depth-3" src="img/default.png"/>
-				</div>
-                <p class="card-panel transparent z-depth-3 texto">Nome: Usuario</p>
-                <p class="card-panel transparent z-depth-3 texto">Idade: 16</p>
-                <p class="card-panel transparent z-depth-3 texto">Interesses: Jogos</p>
-				</div>
-            <div class="col s12 m12 l8">
-				<p class="card-panel Cor5 Cor2-texto centerTxt titulo">Atividades Recentes</p>
-				<div class="card-panel transparent z-depth-3">
-				  <div class="row valign-wrapper">
-					<div class="col s2">
-					  <img src="img/default.png" alt="" class=" circle responsive-img"> 
+					<div class="card-panel cards scaleCard">
+						<div class="row valign-wrapper">
+							<div class="col s2">
+								<img src="img/icone.jpg" alt="" class="circle responsive-img"> 
+							</div>
+							<div class="col s10">
+							<span class="black-text texto">
+								Alcançou a conquista [Conquista 1] no jogo [Blockrain].
+							</span>
+							</div>
+						</div>	
 					</div>
-					<div class="col s10">
-					  <span class="black-text texto">
-						Alcançou a conquista [Conquista] no jogo [Blockrain].
-					  </span>
-					</div>
-				  </div>	
-				</div>
-				<div class="card-panel transparent z-depth-3 texto">
-				  <div class="row valign-wrapper">
-					<div class="col s2">
-					  <img src="img/blockrain.png" alt="" class="circle responsive-img"> <!-- notice the "circle" class -->
-					</div>
-					<div class="col s10">
-					  <span class="black-text">
-						Começou a jogar Blockrain.
-					  </span>
-					</div>
-				  </div>
-				</div>
-				<div class="card-panel transparent z-depth-3 texto">
-				  <div class="row valign-wrapper">
-					<div class="col s2">
-					  <img src="img/default.png" alt="" class="circle responsive-img"> 
-					</div>
-					<div class="col s10">
-					  <span class="black-text">
-						Alcançou a conquista [Conquista] no jogo [Blockrain].
-					  </span>
-					</div>
-				  </div>	
-				</div>
-				<div class="card-panel transparent z-depth-3 texto">
-				  <div class="row valign-wrapper">
-					<div class="col s2">
-					  <img src="img/default.png" alt="" class="circle responsive-img"> 
-					</div>
-					<div class="col s10">
-					  <span class="black-text">
-						Alcançou a conquista [Conquista] no jogo [Blockrain].
-					  </span>
-					</div>
-				  </div>	
-				</div>
-            </div>
-          </div>
 
-        </div>
-        <div>
-          <div class="row">
-		  <!-- Primeiro jogo-->
-            <div class="col s12 m6 l3">
-              <div class="card">
-                <div class="card-image">
-                  <img src="img/blockrain.png">
-                  <a href="blockrain.html" class="btn-floating halfway-fab waves-effect waves-light red pulse"><i class="material-icons">add</i></a>
-                </div>
-                <div class="card-content Cor2 texto">
-                  <p>BlockRain é um jogo desenvolvido totalmente em JavaScript, baseado no clássico jogo Tetris.</p>
-                </div>
-              </div>
-            </div>
-			<!-- Segundo jogo -->
-			<div class="col s12 m6 l3">
-              <div class="card">
-                <div class="card-image">
-                  <img src="img/default.png">
-                  <a class="btn-floating halfway-fab waves-effect waves-light red pulse"><i class="material-icons">add</i></a>
-                </div>
-                <div class="card-content centerTxt Cor2 texto">
-                  <p><br>Em Breve!<br><br></p>
-                </div>
-              </div>
-            </div>
-			<!-- Terceiro Jogo -->
-			<div class="col s12 m6 l3">
-              <div class="card">
-                <div class="card-image">
-                  <img src="img/default.png">
-                  <a class="btn-floating halfway-fab waves-effect waves-light red pulse"><i class="material-icons">add</i></a>
-                </div>
-                <div class="card-content centerTxt Cor2 texto">
-                  <p><br>Em Breve!<br><br></p>
-                </div>
-              </div>
-            </div>
-			<!-- Quarto Jogo -->
-			<div class="col s12 m6 l3">
-              <div class="card">
-                <div class="card-image">
-                  <img src="img/default.png">
-                  <a class="btn-floating halfway-fab waves-effect waves-light red pulse"><i class="material-icons">add</i></a>
-                </div>
-                <div class="card-content centerTxt Cor2 texto">
-                  <p><br>Em Breve!<br><br></p>
-                </div>
-              </div>
-            </div>
-			
+				<div class="card-panel cards scaleCard texto">
+				  <div class="row valign-wrapper">
+					<div class="col s2">
+					  <img src="img/icone.jpg" alt="" class="circle responsive-img"> 
+					</div>
+					<div class="col s10">
+					  <span class="black-text">
+						Alcançou a conquista [Conquista 2] no jogo [Blockrain].
+					  </span>
+					</div>
+				  </div>	
+				</div>
+				<div class="card-panel cards scaleCard texto">
+				  <div class="row valign-wrapper">
+					<div class="col s2">
+					  <img src="img/icone.jpg" alt="" class="circle responsive-img"> 
+					</div>
+					<div class="col s10">
+					  <span class="black-text">
+						Alcançou a conquista [Conquista 3] no jogo [Blockrain].
+					  </span>
+					</div>
+				  </div>	
+				</div>
+			</div>		
           </div>
         </div>
       </main>
